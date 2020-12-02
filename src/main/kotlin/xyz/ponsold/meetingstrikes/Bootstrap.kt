@@ -21,7 +21,7 @@ class Bootstrap(@Autowired val listStrikesAction: ListStrikesAction,
     fun createApp(): App {
         val app = App()
 
-        app.command("/slackolate") { req, ctx ->
+        app.command("/strikes") { req, ctx ->
             if (req.payload.text == null) {
                 return@command ctx.ack()
             }
@@ -115,7 +115,7 @@ class Bootstrap(@Autowired val listStrikesAction: ListStrikesAction,
     companion object {
         val helpText = """
             ```
-            Usage /slackolate [command]
+            Usage /strikes [command]
             
             Commands:
             list                   Lists all open strikes
