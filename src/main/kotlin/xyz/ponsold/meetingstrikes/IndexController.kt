@@ -10,7 +10,7 @@ class IndexController {
     @RequestMapping("/")
     @ResponseBody
     fun home(): String {
-        return "Hello from meeting-strikes"
+        return "Hello after Github Push meeting-strikes"
     }
 
 }
