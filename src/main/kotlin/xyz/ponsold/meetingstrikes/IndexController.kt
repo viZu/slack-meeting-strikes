@@ -12,5 +12,4 @@ class IndexController {
     fun home(): String {
         return "Hello after Github Push meeting-strikes"
     }
-
 }
